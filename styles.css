@@ -1,37 +1,36 @@
 /*********************************************************************
  LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
 *********************************************************************/
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
 
 /*********************************************************************
   YOUR MOBILE/BASE STYLES GO HERE
 *********************************************************************/
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body{
-    font-size: 16px;
+html,
+body {
+  font-size: 16px;
 }
 
 img {
   display: flex;
   max-width: 100%;
-
 }
 
-.container{
+.container {
   max-width: 800px;
   margin: 0 auto;
 }
 
-.flex{
+.flex {
   /*
   * When two elements combined exceed 100%
   * wrap to a new row
   */
   flex-wrap: wrap;
-  display:  flex;
 
   /*
   * When the flex-basis doesn't add up to 100%,
@@ -40,10 +39,11 @@ img {
   */
 
   justify-content: space-between;
-  font-size:  2em;
+  font-size: 2em;
 }
 
-.icon, .text{
+.icon,
+.text {
   padding: 25px;
   margin-bottom: 22px;
   border: 1px solid #000;
@@ -62,19 +62,21 @@ img {
   flex-basis: 72%;
 }
 
-
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
-@media(min-width: 681px) {
-    /* Any adjustments for tablets and larger go here.
+@media (min-width: 681px) {
+  /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+  .flex {
+    display: flex;
+  }
 }
 
 /*********************************************************************
   YOUR DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
-@media(min-width: 729px) {
-    /* Any adjustments for desktop and larger go here.
+@media (min-width: 729px) {
+  /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 729px or larger -- so desktop */
 }
