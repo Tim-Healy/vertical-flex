@@ -31,7 +31,6 @@ img {
   * wrap to a new row
   */
   flex-wrap: wrap;
-  display:  flex;
 
   /*
   * When the flex-basis doesn't add up to 100%,
@@ -46,8 +45,8 @@ img {
 .icon, .text{
   padding: 25px;
   margin-bottom: 22px;
-  border: 1px solid #000;
-  text-align: center;
+  border: 1px solid #FFF;
+  text-align: left;
 }
 
 /*
@@ -69,6 +68,15 @@ img {
 @media(min-width: 681px) {
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+.flex {
+  display: flex;
+}
+
+img{
+  display: flex;
+  max-width 100%;
+}
 }
 
 /*********************************************************************
